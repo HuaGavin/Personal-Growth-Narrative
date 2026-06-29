@@ -3,6 +3,8 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 .DS_Store
+~$*.xlsx
+~$*.docx
 
 # Editor directories and files
 .vscode/
@@ -10,11 +12,57 @@ Desktop.ini
 *.swp
 *.swo
 *~
+*.sublime-*
+*.sublime-workspace
 
 # Logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Temporary files
 *.tmp
 *.temp
+*.bak
+*.backup
+
+# Node.js (if any)
+node_modules/
+package-lock.json
+
+# Environment files (keep your API keys safe)
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Personal project files (development history - not for public repo)
+*原型0.0.1.html
+*原型0.0.2.html
+*原型0.0.3.html
+*.pdf
+*.txt
+*.xmind
+Mr_Ranedeer.txt
+提示词*.txt
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
