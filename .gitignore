@@ -1,4 +1,9 @@
-# OS files
+# ============================================================
+# 个人成长史产品 — .gitignore
+# 根目录只保留发布版产品 + README + 本文件
+# ============================================================
+
+# --- 系统文件 ---
 Thumbs.db
 ehthumbs.db
 Desktop.ini
@@ -6,7 +11,7 @@ Desktop.ini
 ~$*.xlsx
 ~$*.docx
 
-# Editor directories and files
+# --- 编辑器文件 ---
 .vscode/
 .idea/
 *.swp
@@ -15,54 +20,39 @@ Desktop.ini
 *.sublime-*
 *.sublime-workspace
 
-# Logs
+# --- 日志 & 临时文件 ---
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Temporary files
 *.tmp
 *.temp
 *.bak
 *.backup
 
-# Node.js (if any)
-node_modules/
-package-lock.json
-
-# Environment files (keep your API keys safe)
+# --- 环境变量 ---
 .env
 .env.local
 .env.*.local
 
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
+# --- Node.js（如果有） ---
+node_modules/
+package-lock.json
 
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-Desktop.ini
-
-# Personal project files (development history - not for public repo)
-*原型0.0.1.html
-*原型0.0.2.html
-*原型0.0.3.html
-*.pdf
-*.txt
-*.xmind
-Mr_Ranedeer.txt
-提示词*.txt
-
-# Byte-compiled / optimized / DLL files
+# --- Python（如果有） ---
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Distribution / packaging
 dist/
 build/
 *.egg-info/
+
+# ============================================================
+#  内部目录（全部不上传 GitHub）
+# ============================================================
+
+# 产品管理文档（需求池、工作流、版本记录等）
+product/
+
+# 历史版本 & 开发中版本
+versions/
+
+# 个人参考资料 & 私人文件
+reference/
